@@ -1,0 +1,7 @@
+g++ -c -std=c++11 -Wall -Werror app.cpp -o app.o
+
+g++ -c -std=c++11  task_management_tool.cpp -o task_management_tool.o
+
+g++ task_management_tool.o app.o -o app
+
+./app f appointments
